@@ -1,0 +1,129 @@
+/home/zeta/anaconda3/envs/mmseg/bin/python /home/zeta/LuoQiang/model/Target_Detection/CVPR/YOLOX-Lite/models/yolo.py
+YOLOv5 🚀 v5.0-406-g4455a49 torch 1.7.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24259.875MB)
+
+
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     35393  models.common.CSPT3                     [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  3    322310  models.common.CSPT3                     [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3   1279500  models.common.CSPT3                     [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   2204168  models.common.CSPT3                     [512, 512, 1]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    396420  models.common.C3STR                     [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     99906  models.common.C3STR                     [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    330884  models.common.C3STR                     [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1317128  models.common.C3STR                     [512, 512, 1, False]
+ 24                17  1     16640  models.common.Conv                      [128, 128, 1, 1]
+ 25                20  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 26                23  1     65792  models.common.Conv                      [512, 128, 1, 1]
+ 27                24  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 28                24  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 29                25  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 30                25  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 31                26  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 32                26  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 33[27, 28, 29, 30, 31, 32]  1     86301  models.yolox.DetectX                    [218, 1, [128, 128, 128, 128, 128, 128]]
+Model Summary: 596 layers, 11091722 parameters, 11091722 gradients
+
+
+Process finished with exit code 0
+/home/zeta/anaconda3/envs/mmseg/bin/python /home/zeta/LuoQiang/model/Target_Detection/CVPR/YOLOX-Lite/models/yolo.py
+YOLOv5 🚀 v5.0-406-g4455a49 torch 1.7.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24259.875MB)
+
+
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     35393  models.common.CSPT3                     [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  3    322310  models.common.CSPT3                     [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   1182720  models.common.C3                        [512, 512, 1]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    396420  models.common.C3STR                     [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     99906  models.common.C3STR                     [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    330884  models.common.C3STR                     [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1317128  models.common.C3STR                     [512, 512, 1, False]
+ 24                17  1     16640  models.common.Conv                      [128, 128, 1, 1]
+ 25                20  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 26                23  1     65792  models.common.Conv                      [512, 128, 1, 1]
+ 27                24  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 28                24  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 29                25  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 30                25  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 31                26  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 32                26  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 33[27, 28, 29, 30, 31, 32]  1     86301  models.yolox.DetectX                    [218, 1, [128, 128, 128, 128, 128, 128]]
+Model Summary: 494 layers, 9415926 parameters, 9415926 gradients
+
+
+Process finished with exit code 0
+/home/zeta/anaconda3/envs/mmseg/bin/python /home/zeta/LuoQiang/model/Target_Detection/CVPR/YOLOX-Lite/models/yolo.py
+YOLOv5 🚀 v5.0-406-g4455a49 torch 1.7.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24259.875MB)
+
+
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  3    156928  models.common.C3                        [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24                17  1     16640  models.common.Conv                      [128, 128, 1, 1]
+ 25                20  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 26                23  1     65792  models.common.Conv                      [512, 128, 1, 1]
+ 27                24  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 28                24  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 29                25  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 30                25  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 31                26  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 32                26  2    295424  models.common.Conv                      [128, 128, 3, 1]
+ 33[27, 28, 29, 30, 31, 32]  1     86301  models.yolox.DetectX                    [218, 1, [128, 128, 128, 128, 128, 128]]
+Model Summary: 360 layers, 9021661 parameters, 9021661 gradients
+
+
+Process finished with exit code 0
