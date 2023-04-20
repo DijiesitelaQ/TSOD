@@ -1,5 +1,5 @@
 # yolox-SPPST
-This repo is the implementation of ["Pre-locator Incorporating Swin-Transformer Refined Classifier for Traffic Sign Detection"].
+This repo is the implementation of ["Pre-locator Incorporating Swin-Transformer Refined Classifier for Traffic Sign Recognition"].
 this paper proposes a novel two-stage traffic sign detection method consisting of a pre-locator network, which directly acquires sub-regions that may contain traffic signs from the original image, and a refined classification network, which performs the traffic sign refinement recognition task in the sub-regions; in order to more effectively learn the special spatial information of traffic sign presence, an innovative SPP-ST module is proposed, which combines the Spatial Pyramid Pool module (SPP) is integrated with the Swin-Transformer module as a new feature extractor.
 
 # Install
